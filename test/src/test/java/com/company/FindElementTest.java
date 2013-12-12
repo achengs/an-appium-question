@@ -14,7 +14,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 public class FindElementTest {
 
-	protected static String app = "/path/to/your/clone/of/app/bin/app.apk";
+	protected static String app = "/path/to/your/clone/of/app/bin/app.apk"; // CHANGE THIS LINE
 	protected static String appPackage = "com.company.app";
 	protected static String appActivity = appPackage + ".MainActivity";
 	protected static final String TIMEOUT = "10000";
@@ -66,7 +66,7 @@ public class FindElementTest {
 	public void findById() throws Exception {
 		WebElement f = driver.findElement(By.id("edit_message"));
 		f.sendKeys("asdf");
-		WebElement g = driver.findElement(By.id("edit_message_1"));
+		WebElement g = driver.findElement(By.id("edit_message_1")); // FAILS FOR ME - WHY?
 		g.sendKeys("hjkl");
 	}
 }
