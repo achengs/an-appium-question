@@ -64,9 +64,9 @@ public class FindElementTest {
 	}
 	@Test
 	public void findById() throws Exception {
-		WebElement f = driver.findElement(By.id("edit_message"));
+		WebElement f = driver.findElement(By.id("com.company.app:id/edit_message"));
 		f.sendKeys("asdf");
-		WebElement g = driver.findElement(By.id("edit_message_1")); // FAILS FOR ME - WHY?
+		WebElement g = driver.findElement(By.id("com.company.app:id/edit_message")); // THIS SHOULD WORK NOW.
 		g.sendKeys("hjkl");
 	}
 }
